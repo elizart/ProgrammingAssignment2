@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## list of 4 functions to 
+## initialize a matrix (setting it's inverse memory space to null), 
+## retrieve a matrix 
+## initialize, retreive the inverse of the matrix
+## 
+##  Matrix and InverseMatrix are set in general environment
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -17,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinv = getinv)
 }
 
-## Write a short comment describing this function
+## if inv of matrix is stored in memory gets the cached inverse matrix
+## if not compute inverse matrix (solve) and stores it in memory
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
